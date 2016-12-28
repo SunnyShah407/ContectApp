@@ -13,6 +13,10 @@
 		375AAF8C1E12744200995D6C /* ContectTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 375AAF8A1E12744200995D6C /* ContectTest.xcdatamodeld */; };
 		375AAF8E1E12744200995D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375AAF8D1E12744200995D6C /* Assets.xcassets */; };
 		375AAF911E12744200995D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375AAF8F1E12744200995D6C /* LaunchScreen.storyboard */; };
+		375AAF991E12763D00995D6C /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AAF981E12763D00995D6C /* BorderTextField.swift */; };
+		375AAF9B1E12791300995D6C /* EditContectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AAF9A1E12791300995D6C /* EditContectViewController.swift */; };
+		375AAF9D1E12945900995D6C /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375AAF9C1E12945900995D6C /* Contacts.framework */; };
+		A3C34A1A1E1380A800325753 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C34A191E1380A800325753 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		375AAF8D1E12744200995D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		375AAF901E12744200995D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		375AAF921E12744200995D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375AAF981E12763D00995D6C /* BorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		375AAF9A1E12791300995D6C /* EditContectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContectViewController.swift; sourceTree = "<group>"; };
+		375AAF9C1E12945900995D6C /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		A3C34A191E1380A800325753 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375AAF9D1E12945900995D6C /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 		375AAF771E12744200995D6C = {
 			isa = PBXGroup;
 			children = (
+				375AAF9C1E12945900995D6C /* Contacts.framework */,
 				375AAF821E12744200995D6C /* ContectTest */,
 				375AAF811E12744200995D6C /* Products */,
 			);
@@ -59,10 +69,13 @@
 				375AAF831E12744200995D6C /* AppDelegate.swift */,
 				375AAF851E12744200995D6C /* ViewController.swift */,
 				375AAF871E12744200995D6C /* Main.storyboard */,
+				375AAF981E12763D00995D6C /* BorderTextField.swift */,
 				375AAF8D1E12744200995D6C /* Assets.xcassets */,
 				375AAF8F1E12744200995D6C /* LaunchScreen.storyboard */,
 				375AAF921E12744200995D6C /* Info.plist */,
 				375AAF8A1E12744200995D6C /* ContectTest.xcdatamodeld */,
+				375AAF9A1E12791300995D6C /* EditContectViewController.swift */,
+				A3C34A191E1380A800325753 /* SearchViewController.swift */,
 			);
 			path = ContectTest;
 			sourceTree = "<group>";
@@ -94,11 +107,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = STL;
 				TargetAttributes = {
 					375AAF7F1E12744200995D6C = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -138,9 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C34A1A1E1380A800325753 /* SearchViewController.swift in Sources */,
+				375AAF9B1E12791300995D6C /* EditContectViewController.swift in Sources */,
 				375AAF861E12744200995D6C /* ViewController.swift in Sources */,
 				375AAF8C1E12744200995D6C /* ContectTest.xcdatamodeld in Sources */,
 				375AAF841E12744200995D6C /* AppDelegate.swift in Sources */,
+				375AAF991E12763D00995D6C /* BorderTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,8 +197,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -225,8 +244,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -245,6 +266,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -257,6 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silvertouch.ContectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -268,6 +291,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.silvertouch.ContectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -290,6 +314,7 @@
 				375AAF971E12744200995D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

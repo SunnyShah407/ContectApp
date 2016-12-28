@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Person" syncable="YES">
+        <attribute name="fname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="30"/>
+    </elements>
 </model>

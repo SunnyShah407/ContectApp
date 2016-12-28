@@ -14,6 +14,12 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>NSCameraUsageDescription</key>
+	<string>user photo</string>
+	<key>NSContactsUsageDescription</key>
+	<string>contect users</string>
+	<key>Privacy - Photo Library Usage Description </key>
+	<string>$(PRODUCT_NAME) photo use</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
